@@ -101,6 +101,201 @@
         </div>
     </nav>
 
+    <section id="cesta" class="container py-5">
+        <h2 class="text-center mb-4">Tu Cesta</h2>
+        <div class="row">
+            <!-- Columna de la cesta -->
+            <div class="col-md-8">
+
+                <!-- Producto 1 -->
+                <div class="card mb-3">
+                    <div class="row g-0">
+                        <!-- Imagen del producto -->
+                        <div class="col-3">
+                            <img src="recursos/imagenes/espadaelfica.webp" class="img-fluid rounded-start"
+                                alt="Espada Elfica">
+                        </div>
+                        <!-- Información del producto -->
+                        <div class="col-6">
+                            <div class="card-body">
+                                <h5 class="card-title">Espada Elfica de Rivendel</h5>
+                                <p class="card-text">Cantidad:
+                                    <input type="number" class="form-control d-inline-block" style="width: 60px;"
+                                        value="1" min="1" max="10">
+                                </p>
+                                <p class="card-text">Precio Unitario: 5000 Monedas de Mithril</p>
+                            </div>
+                        </div>
+                        <!-- Precio total y eliminar -->
+                        <div class="col-3 d-flex flex-column align-items-center justify-content-center">
+                            <p class="fs-5 fw-bold text-primary mb-2">Total: 5000</p>
+                            <button class="btn btn-outline-danger btn-sm">Eliminar</button>
+                        </div>
+                    </div>
+                </div>
+                <!-- Producto 2 -->
+                <div class="card mb-3">
+                    <div class="row g-0">
+                        <div class="col-3">
+                            <img src="recursos/imagenes/escudogondor.webp" class="img-fluid rounded-start"
+                                alt="Escudo de Gondor">
+                        </div>
+                        <div class="col-6">
+                            <div class="card-body">
+                                <h5 class="card-title">Escudo de Gondor</h5>
+                                <p class="card-text">Cantidad:
+                                    <input type="number" class="form-control d-inline-block" style="width: 60px;"
+                                        value="2" min="1" max="10">
+                                </p>
+                                <p class="card-text">Precio Unitario: 3500 Monedas de Mithril</p>
+                            </div>
+                        </div>
+                        <div class="col-3 d-flex flex-column align-items-center justify-content-center">
+                            <p class="fs-5 fw-bold text-primary mb-2">Total: 7000</p>
+                            <button class="btn btn-outline-danger btn-sm">Eliminar</button>
+                        </div>
+                    </div>
+                </div>
+                <!-- Producto 3 -->
+                <div class="card mb-3">
+                    <div class="row g-0">
+                        <div class="col-3">
+                            <img src="recursos/imagenes/pocioncurativa.webp" class="img-fluid rounded-start"
+                                alt="Poción Curativa">
+                        </div>
+                        <div class="col-6">
+                            <div class="card-body">
+                                <h5 class="card-title">Poción Curativa Elfica</h5>
+                                <p class="card-text">Cantidad:
+                                    <input type="number" class="form-control d-inline-block" style="width: 60px;"
+                                        value="3" min="1" max="10">
+                                </p>
+                                <p class="card-text">Precio Unitario: 150 Monedas de Mithril</p>
+                            </div>
+                        </div>
+                        <div class="col-3 d-flex flex-column align-items-center justify-content-center">
+                            <p class="fs-5 fw-bold text-primary mb-2">Total: 450</p>
+                            <button class="btn btn-outline-danger btn-sm">Eliminar</button>
+                        </div>
+                    </div>
+                </div>
+                <!-- Producto 4 -->
+                <div class="card mb-3">
+                    <div class="row g-0">
+                        <div class="col-3">
+                            <img src="recursos/imagenes/arco.jpg" class="img-fluid rounded-start"
+                                alt="Arco de Mirkwood">
+                        </div>
+                        <div class="col-6">
+                            <div class="card-body">
+                                <h5 class="card-title">Arco de Mirkwood</h5>
+                                <p class="card-text">Cantidad:
+                                    <input type="number" class="form-control d-inline-block" style="width: 60px;"
+                                        value="1" min="1" max="10">
+                                </p>
+                                <p class="card-text">Precio Unitario: 2200 Monedas de Mithril</p>
+                            </div>
+                        </div>
+                        <div class="col-3 d-flex flex-column align-items-center justify-content-center">
+                            <p class="fs-5 fw-bold text-primary mb-2">Total: 2200</p>
+                            <button class="btn btn-outline-danger btn-sm">Eliminar</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Segunda columna (Resumen y sugerencias) -->
+            <div class="col-md-4">
+                <!-- Primera fila: Resumen del pedido -->
+                <div class="card mb-4">
+                    <div class="card-body">
+                        <h5 class="card-title">Resumen del pedido</h5>
+                        <!-- Subtotal -->
+                        <p class="card-text">
+                            Subtotal (3 productos): <span class="fw-bold">15,000 Monedas de Mithril</span>
+                        </p>
+                        <!-- Impuestos -->
+                        <p class="card-text">
+                            Impuestos (10%): <span class="fw-bold">1,500 Monedas de Mithril</span>
+                        </p>
+                        <!-- Gastos de envío -->
+                        <p class="card-text">
+                            Gastos de envío: <span class="fw-bold">500 Monedas de Mithril</span>
+                        </p>
+                        <!-- Total -->
+                        <p class="card-text fs-5 border-top pt-2">
+                            Total: <span class="fw-bold text-primary">17,000 Monedas de Mithril</span>
+                        </p>
+                        <!-- Botón para tramitar pedido -->
+                        <button class="btn btn-primary w-100 mb-2">Tramitar pedido</button>
+                        <!-- Botón para continuar comprando -->
+                        <button class="btn btn-outline-secondary w-100">Continuar comprando</button>
+                    </div>
+                </div>
+
+                <!-- Segunda fila: Productos sugeridos -->
+                <div class="card">
+                    <div class="card-body">
+                        <h5 class="card-title">Productos que te pueden interesar</h5>
+                        <div class="d-flex flex-column">
+                            <!-- Producto sugerido 1 -->
+                            <div class="card mb-3" style="max-width: 100%;">
+                                <div class="row g-0 align-items-center">
+                                    <div class="col-3">
+                                        <img src="recursos/imagenes/armadura.jpg" class="img-fluid rounded"
+                                            alt="Armadura de Gondor">
+                                    </div>
+                                    <div class="col-7">
+                                        <div class="card-body p-2">
+                                            <p class="card-text mb-1">Armadura de Gondor</p>
+                                        </div>
+                                    </div>
+                                    <div class="col-2 text-center">
+                                        <button class="btn btn-outline-primary btn-sm">Añadir</button>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- Producto sugerido 2 -->
+                            <div class="card mb-3" style="max-width: 100%;">
+                                <div class="row g-0 align-items-center">
+                                    <div class="col-3">
+                                        <img src="recursos/imagenes/manto.jpg" class="img-fluid rounded"
+                                            alt="Manto Invisible">
+                                    </div>
+                                    <div class="col-7">
+                                        <div class="card-body p-2">
+                                            <p class="card-text mb-1">Manto Invisible</p>
+                                        </div>
+                                    </div>
+                                    <div class="col-2 text-center">
+                                        <button class="btn btn-outline-primary btn-sm">Añadir</button>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- Producto sugerido 3 -->
+                            <div class="card mb-3" style="max-width: 100%;">
+                                <div class="row g-0 align-items-center">
+                                    <div class="col-3">
+                                        <img src="recursos/imagenes/arco.jpg" class="img-fluid rounded"
+                                            alt="Arco de Mirkwood">
+                                    </div>
+                                    <div class="col-7">
+                                        <div class="card-body p-2">
+                                            <p class="card-text mb-1">Arco de Mirkwood</p>
+                                        </div>
+                                    </div>
+                                    <div class="col-2 text-center">
+                                        <button class="btn btn-outline-primary btn-sm">Añadir</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
     <footer class="bg-marron text-crema py-5">
         <div class="container">
             <div class="row">
